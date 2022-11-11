@@ -95,7 +95,6 @@ namespace DefaultNamespace
             if (!_canAddRenderDepth())
                 return;
             
-            commandBuffer.Clear();
             commandBuffer.DrawRenderer(renderer, m_depthOnlyMaterial, 0);
         }
         
@@ -104,7 +103,6 @@ namespace DefaultNamespace
             if (!_canAddRenderDepth())
                 return;
             
-            commandBuffer.Clear();
             commandBuffer.DrawRenderer(renderer, m_depthOnlyMaterial, submeshIndex, 0);
         }
         
